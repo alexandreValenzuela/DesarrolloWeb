@@ -1,5 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer {
+    margin-top: auto;
+}
+
+.imagenes {
+    width: 200px;
+    height: auto;
+}
+
+
+.fondo-azul-gris {
+    background-color: #393B47;
+}
+.fondo-azul-marino {
+    background-color: #232533;
+}
+.fondo-naranja {
+    background-color: #CB8026;
+}
+.fondo-arena {
+    background-color: #E0A72C;
+}
+.fondo-durazno {
+    background-color: #F6D7A8;
+}
+
+.texto-azul-gris {
+    color: #393B47;
+}
+.texto-azul-marino {
+    color: #232533;
+}
+.texto-naranja {
+    color: #CB8026;
+}
+.texto-arena {
+    color: #E0A72C;
+}
+.texto-durazno {
+    color: #F6D7A8;
+}
+
 .header {
-    background-color: #207fdf;
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    padding: 10px 0;
     text-align: center;
 }
