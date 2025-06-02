@@ -2,62 +2,98 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-footer.footer {
-    margin-top: auto;
-}
+/* Paleta de colores */
+.fondo-azul-gris    { background-color: #393B47; }
+.fondo-azul-marino  { background-color: #232533; }
+.fondo-naranja      { background-color: #CB8026; }
+.fondo-arena        { background-color: #E0A72C; }
+.fondo-durazno      { background-color: #F6D7A8; }
 
-.imagenes {
-    width: 200px;
-    height: auto;
-}
+.texto-azul-gris    { color: #393B47; }
+.texto-azul-marino  { color: #232533; }
+.texto-naranja      { color: #CB8026; }
+.texto-arena        { color: #E0A72C; }
+.texto-durazno      { color: #F6D7A8; }
 
-
-.fondo-azul-gris {
-    background-color: #393B47;
-}
-.fondo-azul-marino {
-    background-color: #232533;
-}
-.fondo-naranja {
-    background-color: #CB8026;
-}
-.fondo-arena {
-    background-color: #E0A72C;
-}
-.fondo-durazno {
-    background-color: #F6D7A8;
-}
-
-.texto-azul-gris {
-    color: #393B47;
-}
-.texto-azul-marino {
-    color: #232533;
-}
-.texto-naranja {
-    color: #CB8026;
-}
-.texto-arena {
-    color: #E0A72C;
-}
-.texto-durazno {
-    color: #F6D7A8;
-}
-
+/* Header */
 .header {
-    padding: 20px 0;
+    padding: 24px 0 16px 0;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(35,37,51,0.07);
 }
 
+.header-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .imagenes {
+    width: 70px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Navegación de categorías */
+.nav-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-categorias a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-categorias a:hover {
+    color: #E0A72C; /* Arena Suave */
+}
+
+/* Sección principal */
+section {
+    flex: 1 0 auto;
+    padding: 32px 16px;
+}
+
+/* Footer */
 .footer {
-    padding: 10px 0;
+    margin-top: auto;
+    padding: 18px 0 10px 0;
     text-align: center;
+    box-shadow: 0 -2px 8px rgba(35,37,51,0.07);
+}
+
+.footer-contenido nav {
+    margin: 8px 0;
+}
+
+.footer-contenido a {
+    text-decoration: none;
+    color: #F6D7A8;
+    margin: 0 4px;
+    transition: color 0.2s;
+}
+
+.footer-contenido a:hover {
+    color: #E0A72C; /* Arena Suave */
+}
+
+.footer-contenido p {
+    margin: 6px 0;
+    font-size: 0.97em;
 }
