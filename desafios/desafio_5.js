@@ -7,10 +7,10 @@ for (let i = 0; i < electrodomesticos.length; i++) {
 
 console.log("\nLista actualizada:");
 
-let ventaProductos = 2;
+let ventaProductos = 3;
 
 for (let i = 0; i < ventaProductos; i++) {
-  const vendido = electrodomesticos.pop();
+  electrodomesticos.pop();
   
 }
 
